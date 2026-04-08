@@ -39,11 +39,18 @@ body{
     align-items:center;
     justify-content: center;
 }
-h1{
-    font-size: 3rem;
+
+header h1{
+    font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--accent-color);
     
+}
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 form{
@@ -121,17 +128,38 @@ form button:hover{
 
 a{
     color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover{
     text-decoration: underline;
 }
 
 form section.incorrect label{
     animation: shake 0.3s ease-in-out;
-    border: 2px solid red;
-    background-color: red;
+    background-color: rgb(255, 43, 43);
 }
 
 form section.incorrect input{
-    border-color: red;
+    border-color: rgb(255, 43, 43);
     animation: shake 0.3s ease-in-out;
     
+
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+#error-message{
+    color: red;
+
 }
