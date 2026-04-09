@@ -163,3 +163,20 @@ form section.incorrect input{
     color: red;
 
 }
+
+form select{
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 50px;
+    min-width: 0;
+    padding: 0 10px;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid transparent;
+    background-color: var(--input-colour);
+}
+
+form select:focus{
+    outline: none;
+    border: 2px solid var(--text-color);
+}
